@@ -11,25 +11,25 @@
 // }
 
 
-function findMatching(drivers,name){
-  return drivers.filter(function(driver){
-  return (driver.toLowerCase() === name.toLowerCase()) ;
-});
-}
+// function findMatching(drivers,name){
+//   return drivers.filter(function(driver){
+//   return (driver.toLowerCase() === name.toLowerCase()) ;
+// });
+// }
 
-function fuzzyMatch(drivers, str){
-  return drivers.filter(function (driver){
-    return driver.indexOf(str) === 0;
-  })
-}
+// function fuzzyMatch(drivers, str){
+//   return drivers.filter(function (driver){
+//     return driver.indexOf(str) === 0;
+//   })
+// }
 
-function matchName(drivers, matchStr){
-  const matchArr = [];
-  for (let driver of drivers){
-    if (driver['name'] === matchStr){
-      matchArr.push(driver);  
+// function matchName(drivers, matchStr){
+//   const matchArr = [];
+//   for (let driver of drivers){
+//     if (driver['name'] === matchStr){
+//       matchArr.push(driver);  
       
-    }
-  }
-  return matchArr;
-}
+//     }
+//   }
+//   return matchArr;
+// }
