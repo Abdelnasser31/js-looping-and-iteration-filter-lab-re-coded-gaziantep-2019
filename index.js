@@ -43,6 +43,6 @@ function fuzzyMatch(drivers, str){
   return drivers.filter(driver => driver.indexOf(str) === 0);
 }
 
-function matchArr(drivers , matchStr){
+function matchName(drivers , matchStr){
   return drivers.filter(driver => driver.name === matchStr);
 }
