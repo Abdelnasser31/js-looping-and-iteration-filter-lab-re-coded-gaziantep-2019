@@ -33,3 +33,15 @@
 //   }
 //   return matchArr;
 // }
+
+function findMatching(drivers,name){
+  return drivers.filter(function(driver){
+  return (driver.toLowerCase() === name.toLowerCase()) ;
+});
+}
+
+function fuzzyMatch(drivers, str){
+  return drivers.filter(function (driver){
+    return driver.indexOf(str) === 0;
+  })
+}
